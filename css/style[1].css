@@ -1,0 +1,148 @@
+#container {
+    .container {
+        background-color: blueviolet;
+        padding-bottom: 20px;
+        .row {
+            display: flex;
+            align-items: center;
+            .cols {
+                h1 {
+                    font-weight: 900;
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 10px;
+                }
+                button{
+                    border: none;
+                    background-color: transparent;
+                }
+                button:hover{
+                    border: none;
+                    color: #d4f8;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*  for sm size phone */
+@media screen and (max-width: 660px) {
+    #container {
+        p{
+            font-size: 12px;
+        }
+        h4{
+            font-size: 12px;
+        }
+        .container {
+            padding-bottom: 50px;
+            .row {
+                display: flex;
+                flex-direction: column;
+                .cols {
+                    h1 {
+                        font-weight: 900;
+                        font-size: 12px;
+                        color: white;
+                    }
+                    p{
+                        font-size: 10px;
+                        color: white;
+                    }
+                    button{
+                        color: white;
+                        font-size: 18px;
+                    }
+                }
+                #col-lg-3{
+                    color: white;
+                    background-color: black;
+                    margin-top: 10px;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+/*  for pc */
+@media screen and (min-width: 661px) {
+    #container {
+        .container {
+            padding-bottom: 70px;
+            .row {
+                display: flex;
+                justify-content: center;
+                .cols {
+                    h1 {
+                        font-weight: 900;
+                        font-size: 28px;
+                        color: white;
+                    }
+                    p{
+                        font-size: 20px;
+                        color: white;
+                    }
+                    button{
+                        color: white;
+                        font-size: 18px;
+                    }
+                }
+                #col-lg-3{
+                    color: white;
+                    background-color: black;
+                    margin-top: 10px;
+                    margin-left: 5px;
+                    padding: 20px 30px;
+                }
+            }
+        }
+    }
+   
+}
+
+
+
+@media screen and (min-width: 990px){
+    #container {
+        .container {
+            padding: 20px 2px 50px;
+            .row {
+                display: flex;
+                justify-content: center;
+                .cols {
+                    h1 {
+                        font-weight: 900;
+                        font-size: 33px;
+                        color: white;
+                    }
+                    p{
+                        font-size: 17px;
+                        color: white;
+                    }
+                    button{
+                        color: white;
+                        font-size: 28px;
+                    }
+                }
+                #col-lg-3{
+                    color: white;
+                    background-color: black;
+                    margin-top: 10px;
+                    margin-left: 5px;
+                    padding: 20px 30px;
+                }
+            }
+        }
+    }
+}
